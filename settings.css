@@ -1,0 +1,100 @@
+/*popins*/@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.settings-box-border {
+    margin-top: 10px;
+    width: 100%;
+    padding: 5px;
+    transition: .6s;
+    display: none;
+}
+.settings-box {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 00 2px 10px rgb(219, 219, 219);
+}
+.settings {
+    width: 100%;
+    display: flex;
+}
+.settings-dp {
+    height: 120px;
+    width: 120px;
+    border-radius: 5px;
+}
+.settings-name {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: center;
+}
+.settings-name h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: rgb(48, 48, 48);
+}
+.settings-name h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgb(126, 126, 126);
+}
+.settings-name h4 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 13px;
+    color: rgb(153, 153, 153);
+}
+.settings-name h5 {
+    font-family: "Asap", sans-serif;
+    background-color: red;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+}
+@media (min-width: 400px){
+    .settings-name h2 {
+        font-size: 20px;
+    }
+}
+@media (min-width: 700px){
+    .settings-name h2 {
+        font-size: 25px;
+    }
+}
+
+
+.settings-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+.setting-list-item {
+    width: 97%;
+    padding: 6px;
+    border-bottom: 1px solid rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+}
+.setting-list-item a {
+    font-family: "Asap", sans-serif;
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 20px;
+    color: rgb(61, 61, 61);
+}
+.setting-list-item a:hover {
+    font-weight: bold;
+}
+.setting-list-item img {
+    width: 20px;
+}
