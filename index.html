@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./userdetails.css">
     <link rel="stylesheet" href="./settings.css">
     <link rel="stylesheet" href="./scroll-bar.css">
-    <link rel="stylesheet" href="./home-instruct-box.css">
+    <link rel="stylesheet" href="./annoucement-box.css">
     <link rel="stylesheet" href="./searchbox.css">
     <link rel="stylesheet" href="./animation.css">
     <link
@@ -24,6 +24,7 @@
   />
     <link rel="stylesheet" href="./player/audio-player.css" />
     <link rel="icon" href="./System/icon.jpg" id="icon">
+    <style id="custom-style"></style>
     <title id="title">SafeStory | EveloCode</title>
 </head>
 <body>
@@ -136,7 +137,27 @@
                         <!--name and data--><h5><img src="./System/warn.png" style="width: 20px; margin-right: 5px;">Server connecting...<br>Do not close the app !</h5>
                     </div>
                 </div>
-                <h3></h3>
+                <h3></h3><br>
+                <div class="userdetails">
+                    <div class="userdetails-list">
+                        <div class="userdetails-list-item">
+                            <img src="./System/heart-lv0.png" alt="">
+                            <a class="userdetails-list-item-a">Wait...<br> Lovers</a>
+                        </div>
+                    </div>
+                    <div class="userdetails-list">
+                        <div class="userdetails-list-item">
+                            <img src="./System/loving.png" alt="">
+                            <a class="userdetails-list-item-a">Wait...<br>  Loving</a>
+                        </div>
+                    </div>
+                    <div class="userdetails-list">
+                        <div class="userdetails-list-item">
+                            <img src="./System/upload-image.png" alt="">
+                            <a class="userdetails-list-item-a">Wait...<br>  Uploads</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="settings-box-border">
@@ -149,23 +170,23 @@
                         </div>
                         <div class="setting-list-item">
                             <img src="./System/diary.png" alt="">
-                            <a>My Story</a>
+                            <div id="my-story-button"><a onclick="openUserAccount(1)">My Story</a></div>
                         </div>
                         <div class="setting-list-item">
                             <img src="./System/user.png" alt="">
-                            <a>Account</a>
+                            <a id="account-button">Account</a>
                         </div>
                         <div class="setting-list-item">
                             <img src="./System/setting.png" alt="">
-                            <a>Settings</a>
+                            <a id="settings-button">Settings</a>
                         </div>
                         <div class="setting-list-item">
                             <img src="./System/caution.png" alt="">
                             <a>Report</a>
                         </div>
-                        <div class="setting-list-item">
+                        <a></a><div class="setting-list-item">
                             <img src="./System/sign-out.png" alt="">
-                            <a>Log Out</a>
+                            <a href="http://safe-album-xcodejet.great-site.net//login/index.html">Log Out</a>
                         </div>
                     </div>
                 </div>
@@ -176,7 +197,7 @@
         <div class="userdetails-box-border">
             <div class="userdetails-box">
                 <div class="userdetails">
-                    <img src="./System/miniprolab-logo.png"  draggable="false" class="userdetails-dp">
+                    <img src="./System/logo (2).jpg"  draggable="false" class="userdetails-dp">
                     <div class="userdetails-name">
                         <!--name and data--><h5><img src="./System/warn.png" style="width: 20px; margin-right: 5px;">Search an account first</h5>
                     </div>
@@ -228,48 +249,23 @@
             <!--instructions-->
 <div class="home-instruct-box">
     <br><br>
-    <div class="home-instruct-box-1 container reveal" style="transform: translateY(0); opacity: 1;">
-        <img src="./System/sa-home.png" alt="">
-        <div class="home-instruct-box-text">
-            <h1>Safe Story</h1>
-            <h4>I have my personal photo. I want to send it to a friend. But I doubt they will send it to others or they will keep it.</h4>
+    <div class="box-border" style="margin-top: -30px;">
+        <div class="box">
+            <img id="annoucement-img" src="./System/announcement-load.png" alt="">
+            <div class="annoucement-box">
+                <h1 id="annoucement-text"></h1>
+            </div>
+            <div class="box-footer">
+                <div class="box-footer-img">
+                    <img draggable="false" src="./System/logo (2).jpg">
+                </div>
+                <div class="box-footer-text">
+                    <h1>Annoucement</h1>
+                    <h3>From EveloCode official</h3>
+                </div>
+            </div>
         </div>
     </div>
-    <br><br>
-</div>
-<div class="home-instruct-box">
-    <br><br><br>
-    <div class="home-instruct-box-1 container reveal">
-        <img src="./System/send-media.jpg" alt="">
-        <div class="home-instruct-box-text">
-            <h1>Send Media</h1>
-            <h4>Share your media with Safe Story.</h4>
-        </div>
-    </div>
-    <br><br>
-</div>
-<div class="home-instruct-box">
-    <br><br>
-    <div class="home-instruct-box-1 container reveal">
-        <img src="./System/Screenshot-Restricted.jpg" alt="">
-        <div class="home-instruct-box-text">
-            <h1>Screenshot block</h1>
-            <h4>Reciever can't take screenshots in this platform.</h4>
-        </div>
-    </div>
-    <br><br>
-</div>
-<div class="home-instruct-box">
-    <br><br>
-    <div class="home-instruct-box-1 container reveal">
-        <img src="./System/download-block.jpg" alt="">
-        <div class="home-instruct-box-text">
-            <h1>Download block</h1>
-            <h4>Reciever can't download or save files without sender's permission.</h4>
-        </div>
-    </div>
-    <br><br>
-</div>
 </div>
         <!--
             <div class="box-border">
@@ -289,17 +285,14 @@
         -->
     </div>
 
-    <div class="footer">
-            <div class="box-footer">
-                <a href="#">Copyright © 2023 - EveloCode</a>
-            </div>
+    <div class="footer-copyright">
+        <h3>Powered By: &nbsp;<img src="./System/evelocode-footer.png"></h3>
     </div>
     <script src="./boxes.js"></script>
     <script src="./append-data.js"></script>
     <script src="./openuser.js"></script>
     <script src="./animation.js"></script>
     <script src="https://unpkg.com/wavesurfer.js"></script>
-    <!--<script src="./wavesurfer.js"></script>-->
     <script src="./player/audio-player.js"></script>
     <script src="./Loading/loading.js"></script>
 </body>

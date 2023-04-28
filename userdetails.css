@@ -8,6 +8,13 @@
     transition: .6s;
     display: flex;
 }
+.userdetails-box-border:nth-child(4) {
+    margin-top: 10px;
+    width: 100%;
+    padding: 5px;
+    transition: .6s;
+    display: none;
+}
 .userdetails-box {
     width: 100%;
     padding: 10px;
