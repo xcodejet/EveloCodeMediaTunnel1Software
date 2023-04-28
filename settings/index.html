@@ -5,212 +5,284 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./Loading/style.css">
-    <link rel="stylesheet" href="./header.css">
-    <link rel="stylesheet" href="./footer.css">
-    <link rel="stylesheet" href="./design.css">
-    <link rel="stylesheet" href="./userdetails.css">
-    <link rel="stylesheet" href="./settings.css">
-    <link rel="stylesheet" href="./scroll-bar.css">
-    <link rel="stylesheet" href="./home-instruct-box.css">
-    <link rel="stylesheet" href="./searchbox.css">
-    <link rel="stylesheet" href="./animation.css">
-    <link rel="icon" href="./System/icon.jpg" id="icon">
-    <style id="custom-style"></style>
-    <title id="title">SafeStory | EveloCode</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="header-00.css">
+    <link rel="stylesheet" href="footer-01.css">
+    <link rel="stylesheet" href="login-01.css">
+    <link rel="icon" href="./media/icon.png">
+    <link rel="stylesheet" href="./on-scroll-fix.css">
+    <link rel="stylesheet" type="text/css" href="background-00.css">
+    <title>Safe Story | Create Account</title>
 </head>
 <body>
-    <div class="loading-container">
-        <div class="loading-text">Loading...</div>
-        <ul class="loading-field">
-            <div class="loading">
-                <li></li>
-            </div>
-            <div class="loading">
-                <li></li>
-            </div>
-            <div class="loading">
-                <li></li>
-            </div>
-        </ul>
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+     </div>
+    <div class="header">
+        <img src="./media/header-image.png" alt="XCODEJET">
+        <div align="right" style="width: 90%;">
+            <button href="register.html">Home</button>
+            <button href="http://xcodejet.epizy.com">Login</button>
+        </div> 
     </div>
-    <div class="xcodejet-header">
-        <div class="header-items">
-            <a onclick="history.back()"><img draggable="false" class="xcodejet-header-back-img" src="./System/back.png"></a>
-            <img draggable="false" class="xcodejet-header-img" src="./System/header-image.png">
-            <div class="header-text" style="display: none;">
-                <h2>safe story</h2><br>
-                <h3><a style="color: rgb(251, 255, 0)">From </a>EveloCode</h3>
+    <!--Kumuthu Prabhasha [xcodejet.epizy.com]-->
+    <div class="body-xcodejet">
+        <!--2-->
+        <div class="box-1">
+            <div class="box-body" onclick="typeWriter()">
+                <div class="box-body-div">
+                    <br>
+                    <h1><b>Create </b> <a style="text-shadow: 00 1px 15px rgba(226, 255, 213, 0);"><b style="color: red;">S</b><b style="color: rgb(255, 217, 0);">afe</b><b style="color: aqua;"> Story</b></a> <b>account</b></h1>
+                    <br>
+                    <div class="box-body-input">
+                        <div class="box-bitrobo">
+                            <div class="bitrobo-dp"><img src="./media/accont-tag-bot.png" alt=""></div>
+                            <div class="bitrobo-message-box">
+                                <div class="bitrobo-message"></div>
+                            </div>
+                        </div>
+                        <div class="name-input-field-full">
+                            <li id="fname-tag">First Name</li>
+                            <div class="name-input-field">
+                                <input class="data-input" name="first_name" id="fname" type="text" placeholder="enter your first name">
+                            </div>
+                            <br><br>
+                            <li id="lname-tag">Last Name</li>
+                            <div class="name-input-field">
+                                <input class="data-input" name="last_name" id="lname" type="text" placeholder="enter your last name">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-body-footer">
+                    <div class="box-body-footer-back">
+                        <div class="box-body-footer-back-btn" onclick="update_page('home')"><i class='fa fa-arrow-left'></i>&nbsp;Already have an account</div>
+                    </div>
+                    <div class="box-body-footer-next">
+                        <div class="box-body-footer-next-btn" onclick="on_submit_page('name')">Next&nbsp;<i class='fa fa-arrow-right'></i></div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!--<div class="header-items">
-            <img draggable="false" class="xcodejet-header-img" src="./System/miniprolab-logo.png">
-            <div class="header-text">
-                <h2>safe story</h2><br>
-                <h3><a style="color: rgb(251, 255, 0)">From </a>MiniProLab</h3>
+        <!--3-->
+        <div class="box-1">
+            <div class="box-header">
+                <a>Registation in progress...</a>
             </div>
-        </div>-->
-        <div class="header-back">
-            <a >
-                <img onclick="menuTabOpen()" draggable="false" id="profile-1" src="miniprolab">
-            </a>
+            <div class="box-body">
+                <div class="box-body-img">
+                    <img src="./media/MediaTunnel-splash.png">
+                </div>
+                <br>
+                <div class="box-body-div">
+                    <h1><b>Welcome </b><b id="myName1">User</b><b> to</b> <b style="color: red;">S</b><b style="color: rgb(255, 217, 0);">afe</b><b style="color: aqua;"> Story</b></h1>
+                    <br>
+                    <div class="box-body-input">
+                        <li id="email-tag">Email Address</li>
+                        <div class="name-input-field">
+                            <input class="data-input" id="email" type="email" placeholder="example@gmail.com">
+                        </div>
+                        <br><br>
+                        <li id="phone-tag">Phone</li>
+                        <div class="name-input-field">
+                            <input class="data-input" id="phone" type="text" placeholder="94 7* *** ****">
+                        </div>
+                        <br><br>
+                        <li id="birthday-tag"> Birthday</li>
+                        <div class="name-input-field">
+                            <input class="data-input" id="birthday" type="date">
+                        </div>
+                        <br><br>
+                        <li id="gender-tag"> Gender</li>
+                            <div class="name-input-field">
+                            <select name="gender" style="width: 100%" class="data-input" id="gender" style="border-left: 0px;">
+                                <option>male</option>
+                                <option>female</option>
+                            </select>
+                            </div>
+                        <br>
+                    </div>
+                </div>
+                <div class="box-body-footer">
+                    <div class="box-body-footer-back">
+                        <div class="box-body-footer-back-btn" onclick="update_page('name'), document.getElementsByClassName('bitrobo-message')[1].innerHTML = ''"><i class='fa fa-arrow-left'></i>&nbsp;Back</div>
+                    </div>
+                    <div class="box-body-footer-next">
+                        <div class="box-body-footer-next-btn" onclick="on_submit_page('detail'), bitrobo_message('You must be create an username and pawwsord for your account.;You can\'t change username again,;But password can change later.;;You have to type this password when you login.', 1)">Next&nbsp;<i class='fa fa-arrow-right'></i></div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!--3-->
+        <div class="box-1">
+            <div class="box-header">
+                <a>Registation in progress...</a>
+            </div>
+            <div class="box-body">
+                <div class="box-body-img">
+                    <img src="./media/MediaTunnel-splash.png">
+                </div>
+                <br>
+                <div class="box-body-div">
+                    <h1><b>Create </b> <a style="text-shadow: 00 1px 15px rgba(226, 255, 213, 0);"><b style="color: red;">S</b><b style="color: rgb(255, 217, 0);">afe</b><b style="color: aqua;"> Story</b></a> <b>account</b></h1>
+                    <br><br>
+                    <div class="box-body-input">
+                        <div class="box-bitrobo">
+                            <div class="bitrobo-dp"><img src="./media/accont-tag-bot.png" alt=""></div>
+                            <div class="bitrobo-message-box">
+                                <div class="bitrobo-message"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-body-input">
+                        <li id="username-tag">Create Username</li>
+                        <div class="name-input-field">
+                            <input class="data-input" oninput="username_checking()" style="text-transform: lowercase;" id="username" type="text" placeholder="without symbols, space">
+                        </div>
+                        <br><br>
+                        <li id="password-tag">Create Password</li>
+                        <div class="name-input-field">
+                            <input class="data-input" id="password" type="text" placeholder="more than 6 digts">
+                        </div>
+                        <br><br>
+                        <br>
+                    </div>
+                </div>
+                <div class="box-body-footer">
+                    <div class="box-body-footer-back">
+                        <div class="box-body-footer-back-btn" onclick="update_page('detail')"><i class='fa fa-arrow-left'></i>&nbsp;Back</div>
+                    </div>
+                    <div class="box-body-footer-next">
+                        <div class="box-body-footer-next-btn" style="visibility: hidden;" onclick="on_submit_page('acount-unpw')">Next&nbsp;<i class='fa fa-arrow-right'></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--4-->
+        <div class="box-1" style="display: none;">
+            <div class="box-header">
+                <a>Registation in progress...</a>
+            </div>
+            <div class="box-body">
+                <div class="box-body-img">
+                    <img src="./media/MediaTunnel-splash.png">
+                </div>
+                <br>
+                <div class="box-body-div">
+                    <h1><b>Create </b> <a style="text-shadow: 00 1px 15px rgba(226, 255, 213, 0);"><b style="color: red;">S</b><b style="color: rgb(255, 217, 0);">afe</b><b style="color: aqua;"> Story</b></a> <b>account</b></h1>
+                    <br><br>
+                    <div class="box-body-input">
+                        <div class="box-bitrobo">
+                            <div class="bitrobo-dp"><img src="./media/accont-tag-bot.png" alt=""></div>
+                            <div class="bitrobo-message-box">
+                                <div class="bitrobo-message">Read bellow details before create your new account.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-body-input" style="width: 90%;">
+                        <li>Name: <b id="name-output-display"></b></li>
+                        <li>Email: <b id="email-output-display"></b></li>
+                        <li>Phone: <b id="phone-output-display"></b></li>
+                        <li>Birthday: <b id="birthday-output-display"></b></li>
+                        <li>Gender: <b id="gender-output-display"></b></li>
+                        <li>Username: <b id="un-output-display"></b></li>
+                        <li>Password: <b id="pw-output-display"></b></li>
+                        <br>
+                    </div>
+                </div>
+                <div class="box-body-footer">
+                    <div class="box-body-footer-back">
+                        <div class="box-body-footer-back-btn" onclick="update_page('acount-unpw')"><i class='fa fa-arrow-left'></i>&nbsp;Back</div>
+                    </div>
+                    <div class="box-body-footer-next">
+                        <form id="acc-data" method="post">
+                            <input style="display: none" type="text" id="data-first_name" name="first_name" value="F-Name">
+                            <input style="display: none" type="text" id="data-last_name" name="last_name">
+                            <input style="display: none" type="text" id="data-email" name="email">
+                            <input style="display: none" type="text" id="data-phone" name="phone">
+                            <input style="display: none" type="date" id="data-birthday" name="birthday">
+                            <input style="display: none" type="text" id="data-gender" name="gender">
+                            <input style="display: none" type="text" id="data-username" name="username">
+                            <input style="display: none" type="text" id="data-password" name="password">
+                            <input style="display: none" type="text" id="data-type" name="method" value="signup">
+                            <div class="box-body-footer-next">
+                                <div onclick="submit_data(this)" class="box-body-footer-next-btn">Create&nbsp;<i class='fa fa-plus'></i></div>
+                                <a href="http://safe-album-xcodejet.great-site.net/login"><button style="display: none" type="submit" name="create" class="box-body-footer-next-btn-create">Login</button></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a hidden>
+            <!--කාටවත් කියන්න එපා හලෝ මේක හංගපු එකක් හොඳේ...-->
+            <form id="hidden-data">
+                <input type="text" id="backup-data-full_name" name="first_name">
+                <input type="text" id="backup-data-last_name" name="last_name">
+                <input type="text" id="backup-data-email" name="email">
+                <input type="text" id="backup-data-phone" name="phone">
+                <input type="date" id="backup-data-birthday" name="birthday">
+                <input type="text" id="backup-data-gender" name="gender">
+                <input type="text" id="backup-data-username" name="username">
+                <input type="text" id="backup-data-password" name="password">
+                <input type="text" id="data-type" name="method" value="signup">
+            </form>
+        </a>
     </div>
-    <!--search box-->
-    <div class="search-box">
-        <div class="searchbar-box">
-            <div class="searchbar-out">
-                <div class="searchbar-icon">
-                    <img src="./System/search.png">
-                </div>
-                <div class="searchbar-input-out">
-                    <input type="text" placeholder="Type here username" oninput="inputProccess(this)">
-                </div>
-                <div class="searchbar-button-out">
-                    <!--<label for="search">Search</label>-->
-                    <i class="fa fa-search"></i>
-                </div>
-            </div>
-            <div class="resultbar-out">
-                <!--No matches-->
-            </div>
-        </div>
-    </div>
-    </div>
-    <div id="gallery">
-        <!--profile box-->
-        <div class="settings-box-border">
-            <div class="settings-box">
-                <div class="settings">
-                    <img src="miniprolab" draggable="false" class="settings-dp">
-                    <div class="settings-name">
-                        <h2></h2> 
-                        <!--name and data--><h5><img src="./System/warn.png" style="width: 20px; margin-right: 5px;">Server connecting...<br>Do not close the app !</h5>
-                    </div>
-                </div>
-                <h3></h3><br>
-                <div class="userdetails">
-                    <div class="userdetails-list">
-                        <div class="userdetails-list-item">
-                            <img src="./System/heart-lv0.png" alt="">
-                            <a class="userdetails-list-item-a">Wait...<br> Lovers</a>
-                        </div>
-                    </div>
-                    <div class="userdetails-list">
-                        <div class="userdetails-list-item">
-                            <img src="./System/loving.png" alt="">
-                            <a class="userdetails-list-item-a">Wait...<br>  Loving</a>
-                        </div>
-                    </div>
-                    <div class="userdetails-list">
-                        <div class="userdetails-list-item">
-                            <img src="./System/upload-image.png" alt="">
-                            <a class="userdetails-list-item-a">Wait...<br>  Uploads</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="settings-box-border">
-            <div class="settings-box">
-                <div class="settings">
-                    <div class="settings-list">
-                        <div class="setting-list-item">
-                            <img src="./System/paint.png" alt="">
-                            <a>Theme BG</a>
-                            <input oninput="changeColorValue('Theme BG',this)" type="color" value="#FFFFFF" id="theme-colour-input">
-                        </div>
-                        <div class="setting-list-item">
-                            <img src="./System/paint.png" alt="">
-                            <a>Setting Box BG</a>
-                            <input oninput="changeColorValue('Setting Box BG',this)" type="color" value="#FFFFFF" id="theme-colour-input">
-                        </div>
-                        <div class="setting-list-item">
-                            <img src="./System/paint.png" alt="">
-                            <a>Setting Box Shadow</a>
-                            <input oninput="changeColorValue('Setting Box Shadow',this)" type="color" value="#FFFFFF" id="theme-colour-input">
-                        </div>
-                        <div class="setting-list-item">
-                            <img src="./System/paint.png" alt="">
-                            <a>Item Box BG</a>
-                            <input oninput="changeColorValue('Item Box BG',this)" type="color" value="#FFFFFF" id="theme-colour-input">
-                        </div>
-                        <div class="setting-list-item">
-                            <img src="./System/paint.png" alt="">
-                            <a>Item Box Shadow</a>
-                            <input oninput="changeColorValue('Item Box Shadow',this)" type="color" value="#FFFFFF" id="theme-colour-input">
-                        </div>
-                        <div class="setting-list-item">
-                            <img src="./System/paint.png" alt="">
-                            <a>Item Title</a>
-                            <input oninput="changeColorValue('Item Title',this)" type="color" value="#FFFFFF" id="theme-colour-input">
-                        </div>
-                        <div class="setting-list-item">
-                            <img src="./System/paint.png" alt="">
-                            <a>User DP Radius</a>
-                            <input oninput="changeColorValue('User DP Radius',this)" type="range" min="0" max="25" step="0.1" value="25" style="width: 50px;" value="#FFFFFF" id="theme-colour-input">
-                        </div>
-                        <div class="setting-list-item-save">
-                            <a id="save-button" onclick="saveCustomStyles(this)">SAVE CHANGES</a>
-                        </div>
-                    </div>
-                </div>
-                <h3></h3>
-            </div>
-        </div>
-        <!--body-->
-        <div class="body-main">
-            <div class="box-border">
-                <div class="box">
-                    <img src="./System/evelocode/logo (1).jpg" alt="">
-                    <div class="box-footer">
-                        <div class="box-footer-img">
-                            <img draggable="false" src="https://i.ibb.co/YkzDM92/Picsart-23-04-11-21-47-06-262.jpg">
-                        </div>
-                        <div class="box-footer-text">
-                            <h1>Evelo Code</h1>
-                            <h3>Everything easy.</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--
-            <div class="box-border">
-                <div class="box">
-                    <img src="./Upload/1.png" alt="">
-                    <div class="box-footer">
-                        <div class="box-footer-img">
-                            <img draggable="false" src="./profile-photo/kumuthu.jpg">
-                        </div>
-                        <div class="box-footer-text">
-                            <h1>Welcome !</h1>
-                            <h3>MiniProLab team</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        -->
-    </div>
-    <a hidden>
-        <!--කාටවත් කියන්න එපා හලෝ මේක හංගපු එකක් හොඳේ...-->
-        <form id="hidden-settings">
-            <input type="text" id="data-cell-no" name="cellNo">
-            <input type="text" id="data-cell-data" name="cellData">
-            <input type="text" id="data-type" name="method" value="update">
-        </form>
-    </a>
-
     <div class="footer-copyright">
-        <h3>Powered By: &nbsp;<img src="./System/evelocode-footer.png"></h3>
+        <div><h3>Powered By: &nbsp;<img src="./media/evelocode-footer.png"></h3></div>
     </div>
-    <script src="./boxes.js"></script>
-    <script src="./append-data.js"></script>
-    <script src="./openuser.js"></script>
-    <script src="./animation.js"></script>
-    <script src="https://unpkg.com/wavesurfer.js"></script>
-    <script src="./player/audio-player.js"></script>
-    <script src="./Loading/loading.js"></script>
-    <script src="./colorSettings.js"></script>
+<script src="signup-v08.js"></script>
+<script src="bitrobo-typing-v6.js"></script>
+<script src="header-scroll-fix.js"></script>
 </body>
 </html>
