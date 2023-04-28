@@ -29,7 +29,7 @@ let accountId = 0
 const checkLogin = () => {
     if(APP_DATA.content[accountId][0] === input_username){
         if(APP_DATA.content[accountId][1] === input_password){
-            window.open("http://localhost/ArtwebAndroid/index.html?evelocodeid=AE06C52S"+accountId+"2C06E52R","_self")
+            window.open("http://safe-album-xcodejet.great-site.net//index.html?evelocodeid=AE06C52S"+accountId+"2C06E52R","_self")
         }else{
             document.getElementsByClassName("login-box-register")[0].style.display = "none"
             document.getElementById("error").style.display = "flex"
