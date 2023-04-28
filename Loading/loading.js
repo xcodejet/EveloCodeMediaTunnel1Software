@@ -2,7 +2,7 @@ window.addEventListener("load", function () {
     var loadingContainer = document.querySelector(".loading-container")
     //loadingContainer.style.backgroundColor = "#000"
     //setTimeout(hide_loading, 5000)
-    loadingContainer.style.display = "none"
+    //loadingContainer.style.display = "none"
 })
   let loadingText = document.getElementsByClassName("loading-text")[0]
   let loadDots = 0

@@ -1,0 +1,61 @@
+/*popins*/@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header {
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+}
+.header-1 {
+    width: 95%;
+    background-color: rgba(0, 0, 255, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+.header-1 img {
+    width: 120px;
+    margin-left: 15%;
+}
+.header-2 {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+.header-button {
+    width: 100px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    padding: 8px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    transition: .3s;
+    cursor: help;
+    text-decoration: none;
+}
+.header-button:hover {
+    color: rgb(134, 255, 249);
+    text-shadow: 00 2px 15px aqua;
+}
+.header-button:nth-child(2) {
+    width: 120px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
