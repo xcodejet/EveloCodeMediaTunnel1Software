@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./Loading/style.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./design.css">
+    <link rel="stylesheet" href="./userdetails.css">
+    <link rel="stylesheet" href="./settings.css">
+    <link rel="stylesheet" href="./scroll-bar.css">
+    <link rel="stylesheet" href="./home-instruct-box.css">
+    <link rel="stylesheet" href="./searchbox.css">
+    <link rel="stylesheet" href="./animation.css">
+    <link rel="icon" href="./System/icon.jpg" id="icon">
+    <style id="custom-style"></style>
+    <title id="title">SafeStory | EveloCode</title>
+</head>
+<body>
+    <div class="loading-container">
+        <div class="loading-text">Loading...</div>
+        <ul class="loading-field">
+            <div class="loading">
+                <li></li>
+            </div>
+            <div class="loading">
+                <li></li>
+            </div>
+            <div class="loading">
+                <li></li>
+            </div>
+        </ul>
+    </div>
+    <div class="xcodejet-header">
+        <div class="header-items">
+            <a onclick="history.back()"><img draggable="false" class="xcodejet-header-back-img" src="./System/back.png"></a>
+            <img draggable="false" class="xcodejet-header-img" src="./System/header-image.png">
+            <div class="header-text" style="display: none;">
+                <h2>safe story</h2><br>
+                <h3><a style="color: rgb(251, 255, 0)">From </a>EveloCode</h3>
+            </div>
+        </div>
+        <!--<div class="header-items">
+            <img draggable="false" class="xcodejet-header-img" src="./System/miniprolab-logo.png">
+            <div class="header-text">
+                <h2>safe story</h2><br>
+                <h3><a style="color: rgb(251, 255, 0)">From </a>MiniProLab</h3>
+            </div>
+        </div>-->
+        <div class="header-back">
+            <a >
+                <img draggable="false" id="profile-1" src="miniprolab">
+            </a>
+        </div>
+    </div>
+    <!--search box-->
+    <div class="search-box">
+        <div class="searchbar-box">
+            <div class="searchbar-out">
+                <div class="searchbar-icon">
+                    <img src="./System/search.png">
+                </div>
+                <div class="searchbar-input-out">
+                    <input type="text" placeholder="Type here username" oninput="inputProccess(this)">
+                </div>
+                <div class="searchbar-button-out">
+                    <!--<label for="search">Search</label>-->
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>
+            <div class="resultbar-out">
+                <!--No matches-->
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="gallery">
+        <!--profile box-->
+        <div class="settings-box-border">
+            <div class="settings-box">
+                <div class="settings">
+                    <img src="miniprolab" draggable="false" class="settings-dp">
+                    <div class="settings-name">
+                        <h2></h2> 
+                        <!--name and data--><h5><img src="./System/warn.png" style="width: 20px; margin-right: 5px;">Server connecting...<br>Do not close the app !</h5>
+                    </div>
+                </div>
+                <h3></h3><br>
+                <div class="userdetails">
+                    <div class="userdetails-list">
+                        <div class="userdetails-list-item">
+                            <img src="./System/heart-lv0.png" alt="">
+                            <a class="userdetails-list-item-a">Wait...<br> Lovers</a>
+                        </div>
+                    </div>
+                    <div class="userdetails-list">
+                        <div class="userdetails-list-item">
+                            <img src="./System/loving.png" alt="">
+                            <a class="userdetails-list-item-a">Wait...<br>  Loving</a>
+                        </div>
+                    </div>
+                    <div class="userdetails-list">
+                        <div class="userdetails-list-item">
+                            <img src="./System/upload-image.png" alt="">
+                            <a class="userdetails-list-item-a">Wait...<br>  Uploads</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="settings-box-border">
+            <div class="settings-box">
+                <div class="settings">
+                    <div class="settings-list">
+                        <div class="userdetails">
+                            <div class="userdetails-list" onclick="uploadMediaType('image',this)" style="background-color: yellow;">
+                                <div class="userdetails-list-item">
+                                    <img src="./System/upload-image.png" alt="">
+                                    <a class="userdetails-list-item-a">Image</a>
+                                </div>
+                            </div>
+                            <div class="userdetails-list" onclick="uploadMediaType('video',this)">
+                                <div class="userdetails-list-item">
+                                    <img src="./System/upload-video.png" alt="">
+                                    <a class="userdetails-list-item-a">Video</a>
+                                </div>
+                            </div>
+                            <div class="userdetails-list" onclick="uploadMediaType('audio',this)">
+                                <div class="userdetails-list-item">
+                                    <img src="./System/upload-audio.png" alt="">
+                                    <a class="userdetails-list-item-a">Audio</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setting-list-item">
+                            <fieldset>
+                                <legend><h2>Upload Image</h2></legend>
+                                <!--<img src="./System/upload-image.png" alt="">-->
+                                <input class="upload-files" id="upload_image_file" type="file" accept="image/*" />
+                                <img id="upload_image_file_play" src="">
+                                <fieldset>
+                                    <legend><h3>Image Title</h3></legend>
+                                    <input id="upload_image_title" type="text" placeholder="Title"/>
+                                </fieldset>
+                                <fieldset>
+                                    <legend><h3>Image Description</h3></legend>
+                                    <input id="upload_image_description" type="text" placeholder="Description"/>
+                                </fieldset>
+                                <div class="setting-list-item-save">
+                                    <a id="save-button" onclick="uploadImage(this)">UPLOAD</a>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="setting-list-item" style="display: none;">
+                            <fieldset>
+                                <legend><h2>Upload Video</h2></legend>
+                                <!--<img src="./System/upload-image.png" alt="">-->
+                                <input class="upload-files" id="upload_video_file" type="file" accept="video/*" />
+                                <video id="upload_video_file_play" controls controlsList="nofullscreen" controlsList="nodownload"></video>
+                                <fieldset>
+                                    <legend><h3>Video Title</h3></legend>
+                                    <input id="upload_video_title" type="text" placeholder="Title"/>
+                                </fieldset>
+                                <fieldset>
+                                    <legend><h3>Video Description</h3></legend>
+                                    <input id="upload_video_description" type="text" placeholder="Description"/>
+                                </fieldset>
+                                <div class="setting-list-item-save">
+                                    <a id="save-button" onclick="uploadVideo(this)">UPLOAD</a>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="setting-list-item" style="display: none;">
+                            <fieldset>
+                                <legend><h2>Upload Audio</h2></legend>
+                                <!--<img src="./System/upload-image.png" alt="">-->
+                                <input class="upload-files" id="upload_audio_file" type="file" accept="audio/*" />
+                                <audio id="upload_audio_file_play" src="" controls controlsList="nodownload"></audio>
+                                <fieldset>
+                                    <legend><h3>Audio Title</h3></legend>
+                                    <input id="upload_audio_title" type="text" placeholder="Title"/>
+                                </fieldset>
+                                <fieldset>
+                                    <legend><h3>Audio Description</h3></legend>
+                                    <input id="upload_audio_description" type="text" placeholder="Description"/>
+                                </fieldset>
+                                <div class="setting-list-item-save">
+                                    <a id="save-button" onclick="uploadAudio(this)">UPLOAD</a>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <!--<div class="setting-list-item-save">
+                            <a id="save-button" onclick="saveCustomStyles(this)">UPLOAD</a>
+                        </div>-->
+                    </div>
+                </div>
+                <h3></h3>
+            </div>
+        </div>
+    </div>
+    <a hidden>
+        <!--කාටවත් කියන්න එපා හලෝ මේක හංගපු එකක් හොඳේ...-->
+        <form id="hidden-settings">
+            <input type="text" id="data-cell-no" name="cellNo">
+            <input type="text" id="data-cell-data" name="cellData">
+            <input type="text" id="data-type" name="method" value="update">
+        </form>
+    </a>
+
+    <div class="footer-copyright">
+        <h3>Powered By: &nbsp;<img src="./System/evelocode-footer.png"></h3>
+    </div>
+    <script src="./boxes.js"></script>
+    <script src="./append-data.js"></script>
+    <script src="./openuser.js"></script>
+    <script src="./animation.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script src="./player/audio-player.js"></script>
+    <script src="./Loading/loading.js"></script>
+    <script src="./uploading.js"></script>
+</body>
+</html>
